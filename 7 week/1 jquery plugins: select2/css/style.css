@@ -1,0 +1,13 @@
+.wrap{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.select-wrap {
+    width: 400px;
+}
+
+.select-wrap .select2-container{
+    width: 100% !important;
+}

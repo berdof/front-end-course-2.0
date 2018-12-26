@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.10 Input:file</title>
+    <style>
+        body{
+            font-family: Helvetica;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: red;
+            display: flex;
+        }
+
+        .form-file{
+            background: #999;
+            height: 30px;
+            line-height: 30px;
+            width: 300px;
+            padding: 0 10px;
+            color:#fff;
+            font-size: 13px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .form-file:hover{
+            background: #111111;
+        }
+
+        .form input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1000px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"] {
+            background: #000;
+            color: #fff;
+            height: 30px;
+            padding: 0 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form action="http://google.com" class="form">
+    <div class="form-file">
+        Choose file
+        <input type="file" >
+    </div>
+    <input type="submit" value="Найти">
+</form>
+</body>
+</html>

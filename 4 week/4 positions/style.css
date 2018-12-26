@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.container {
+    border: 1px solid #000;
+    background: #999999;
+}
+
+.header {
+    background: orange;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background: black;
+    top: 40px;
+    left: 40px;
+    position: absolute;
+    z-index: 3;
+}
+
+.content {
+    background: cornflowerblue;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    background: blueviolet;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: #1abc9c;
+    position: relative;
+    z-index: 2;
+}

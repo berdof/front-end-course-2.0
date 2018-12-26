@@ -1,0 +1,72 @@
+body {
+    font-family: Helvetica;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?2e4m3w');
+    src:  url('../fonts/icomoon.eot?2e4m3w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?2e4m3w') format('truetype'),
+    url('../fonts/icomoon.woff?2e4m3w') format('woff'),
+    url('../fonts/icomoon.svg?2e4m3w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+    content: "\e905";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-user-plus:before {
+    content: "\e973";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-facebook2:before {
+    content: "\ea91";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+
+
+
+.container{
+    padding: 30px;
+}
+
+.icon-card{
+    font-size: 66px;
+    color: yellowgreen;
+}
+
+.icon-card-red{
+    font-size: 66px;
+    color: red;
+}

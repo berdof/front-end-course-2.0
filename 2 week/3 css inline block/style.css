@@ -1,0 +1,52 @@
+.row {
+    background: green;
+}
+
+.box {
+    background: orange;
+    width: 100px;
+    height: 100px;
+}
+
+.box2{
+    background: red;
+    clear: right;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.ovh{
+    overflow: hidden;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.side-left{
+    float: left;
+    width: 300px;
+    background: yellow;
+}
+
+.side-right{
+    float: right;
+    width: 300px;
+    background: orange;
+}
+
+.center{
+    background: bisque;
+    overflow: hidden;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: Helvetica;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrap{
+    margin: 100px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker{
+    height: 30px;
+    font-size: 13px;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 0 10px;
+}
+
+.flatpickr-calendar:before,
+.flatpickr-calendar:after{
+    display: none;
+}

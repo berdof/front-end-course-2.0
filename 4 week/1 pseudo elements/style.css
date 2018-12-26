@@ -1,0 +1,102 @@
+body {
+    font-family: 'Helvetica';
+}
+
+ul li:not(.important) {
+    color: #999;
+    list-style: none;
+}
+
+.zebra {
+    background: #999999;
+    color: #fff;
+}
+
+.zebra div:first-child {
+    background: #fff;
+    color: green;
+}
+
+.zebra div:last-child {
+    background: red;
+    color: green;
+}
+
+.zebra div:last-child {
+    background: red;
+    color: green;
+}
+
+.zebra p:last-of-type {
+    background: purple;
+    color: #fff;
+}
+
+.zebra div:nth-child(2n) {
+    background: red;
+    color: #fff;
+}
+
+.zebra-child:not(.second) {
+    padding-left: 50px;
+}
+
+.box {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: orange;
+    color: #fff;
+}
+
+.menu {
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+.menu a {
+    font-size: 16px;
+}
+
+.menu a:visited {
+    color: darkgreen;
+}
+
+.menu a:active {
+    color: #000;
+}
+
+.menu a:link {
+    color: red;
+}
+
+input:focus {
+    background: red;
+    outline: none;
+}
+
+.title {
+    color: red;
+}
+
+.title::before{
+    content: '<---';
+    background: orange;
+    color: #fff;
+}
+
+.title::after{
+    content: '--->';
+    background: orange;
+    color: #fff;
+}

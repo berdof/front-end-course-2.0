@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2. Css basic</title>
+    <style type="text/css">
+        div {
+            background: red;
+            color: white;
+        }
+        .orange{
+            background: orange;
+            color: white;
+        }
+        .my-div{
+            font-size: 40px;
+        }
+        #uniqueRed{
+            background: red;
+        }
+        [href]{
+            font-size: 100px;
+        }
+        [href="http://google.com"]{
+            font-size: 100px;
+            color: purple;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div style="background: yellow; color: red;">
+        div content
+    </div>
+    <a href="/">link</a>
+    <a href="http://google.com">link</a>
+    <p class="orange my-div">paragraph orange</p>
+    <p class="my-div">paragraph </p>
+    <p id="uniqueRed" class="my-div">paragraph</p>
+    <div class="my-css-class">
+        from css file
+    </div>
+</body>
+</html>

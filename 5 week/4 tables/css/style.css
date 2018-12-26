@@ -1,0 +1,38 @@
+.fancy-table{
+    border-spacing: 0;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.fancy-table th,
+.fancy-table td{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+}
+
+.fancy-table th{
+    background: #999999;
+    color: #fff;
+}
+
+.fancy-table th:last-child,
+.fancy-table td:last-child{
+    border-right: none;
+}
+
+.fancy-table tr:last-child td{
+    border-bottom: none;
+}
+
+.zebra-table{
+    width: 100%;
+    margin: 100px 0;
+    border-spacing: 0;
+}
+
+.zebra-table tr:nth-child(even) td{
+    background: #000;
+    color: #fff;
+}
+

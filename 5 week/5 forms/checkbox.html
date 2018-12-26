@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.10 Forms: checkbox</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .styled-checkbox {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .styled-checkbox + label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .styled-checkbox + label:before {
+            content: "";
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .styled-checkbox:hover + label:before {
+            background: #f35429;
+            border: none;
+        }
+
+        .styled-checkbox:checked + label:before {
+            background: #f35429;
+            border: none;
+        }
+
+        .styled-checkbox:disabled + label {
+            color: #b8b8b8;
+            cursor: auto;
+        }
+
+        .styled-checkbox:disabled + label:before {
+            box-shadow: none;
+            background: #ddd;
+        }
+
+        .styled-checkbox:checked + label:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 9px;
+            background: white;
+            width: 2px;
+            height: 2px;
+            box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<form action="/">
+    <p>
+        <input type="checkbox" class="styled-checkbox" id="check_html"/>
+        <label for="check_html">html</label>
+    </p>
+    <p>
+        <input type="checkbox" class="styled-checkbox" id="check_css"/>
+        <label for="check_css">css</label>
+    </p>
+    <p>
+        <input type="checkbox" class="styled-checkbox" id="check_js"/>
+        <label for="check_js">js</label>
+    </p>
+</form>
+</body>
+</html>

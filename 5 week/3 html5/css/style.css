@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    height: 100px;
+    background: yellow;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.logo{
+    background: black;
+    width: 100px;
+    height: 30px;
+    display: block;
+    float: left;
+
+}
+
+.menu{
+    overflow: hidden;
+}
+
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    float: left;
+    padding: 0 10px;
+}
+.menu a{
+    color: #000;
+}
+
+.content{
+    background: #1abc9c;
+    overflow: hidden;
+}
+
+.content-aside{
+    float: left;
+    width: 300px;
+    background: red;
+}
+
+.content-center{
+    overflow: hidden;
+    background: #999999;
+    color: #ffffff;
+}
+
+.footer{
+    background: red;
+    height: 100px;
+}
+

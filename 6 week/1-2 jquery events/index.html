@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        body{
+            font-family: Helvetica;
+        }
+        .btn {
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+            border-radius: 100px;
+            border: 1px solid purple;
+            color: purple;
+            padding: 0 30px;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .active, .btn:hover{
+            background: purple;
+            color: #fff;
+        }
+
+        .text{
+            background: orange;
+            padding: 100px 30px;
+            margin: 30px 0;
+            color: #fff;
+        }
+        .test {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h3>click | mouseover | mouseout</h3>
+<div>
+    <div id="btn1" class="btn">Click me</div>
+    <div id="btn2" class="btn">Mouseover me</div>
+    <div id="btn3" class="btn">Mouseout me</div>
+</div>
+<br>
+<br>
+<h3>addClass | removeClass | toggleClass</h3>
+<div>
+    <div id="btn4" class="btn">Add class</div>
+    <div id="btn5" class="btn active">Remove class</div>
+    <div id="btn6" class="btn">Toggle class</div>
+</div>
+<br>
+<br>
+<h3>html | hide | show | toggle | fadeIn | fadeOut | SlideDown | SlideUp</h3>
+<div>
+    <div id="btn7" class="btn">Change html</div>
+    <div id="btn8" class="btn">Hide</div>
+    <div id="btn9" class="btn">Show</div>
+    <div id="btn10" class="btn">Toggle</div>
+    <br>
+    <br>
+    <div id="btn11" class="btn">FadeIn</div>
+    <div id="btn12" class="btn">FadeOut</div>
+    <br>
+    <br>
+    <div id="btn13" class="btn">SlideDown</div>
+    <div id="btn14" class="btn">SlideUp</div>
+</div>
+
+<div class="text">
+    hello i'm text
+</div>
+
+</body>
+</html>

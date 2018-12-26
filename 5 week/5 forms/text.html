@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.10 Input:text</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: red;
+            display: flex;
+        }
+
+        .form input[type="text"] {
+            height: 30px;
+            border: 1px solid #000;
+            padding: 0 10px;
+            flex: 1;
+            outline: 0;
+        }
+
+        .form input[type="text"]:focus {
+            background: #000;
+            color: #fff;
+        }
+
+        .form input[type="submit"] {
+            background: #000;
+            color: #fff;
+            height: 30px;
+            padding: 0 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form action="http://google.com" class="form">
+    <input type="text" value="cats" placeholder="Введите слово">
+    <input type="submit" value="Найти">
+</form>
+</body>
+</html>

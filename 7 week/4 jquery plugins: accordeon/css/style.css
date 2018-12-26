@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica;
+    padding: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.accordion{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.accordion-header{
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    background: #ccc;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.accordion-card.active .accordion-header,
+.accordion-header:hover{
+    background: #999;
+}
+
+.accordion-card:last-child .accordion-header{
+    border-bottom: 1px solid transparent;
+}
+
+.accordion-content{
+    padding: 20px;
+    display: none;
+}

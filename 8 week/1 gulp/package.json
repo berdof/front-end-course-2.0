@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp  build --env production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-uglify": "^3.0.1",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

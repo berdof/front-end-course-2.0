@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5. Css floats. Clearfix</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h3>Вариант 1</h3>
+    <div class="row">
+        <div class="box float-right"></div>
+        <div class="box box2 float-right"></div>
+        <div class="clear"></div>
+    </div>
+    <h3>Вариант 2</h3>
+    <div class="row ovh">
+        <div class="box float-right"></div>
+        <div class="box box2 float-right"></div>
+    </div>
+    <h3>Вариант 3</h3>
+    <div class="row clearfix">
+        <div class="box float-right"></div>
+        <div class="box box2 float-right"></div>
+    </div>
+
+    <h3>Сайт с левой колонкой</h3>
+    <div class="row clearfix">
+        <div class="side-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur et facere, fugit sint sunt temporibus voluptates. Culpa explicabo facere hic incidunt iste laudantium libero necessitatibus pariatur, placeat, quas, tempora?</div>
+        <div class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet ipsam mollitia omnis quibusdam quod repudiandae rerum? Autem delectus distinctio eveniet hic iure nesciunt quidem repudiandae ullam ut voluptas.</div>
+    </div>
+
+    <h3>Сайт с правой колонкой</h3>
+    <div class="row clearfix">
+        <div class="side-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur et facere, fugit sint sunt temporibus voluptates. Culpa explicabo facere hic incidunt iste laudantium libero necessitatibus pariatur, placeat, quas, tempora?</div>
+        <div class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet ipsam mollitia omnis quibusdam quod repudiandae rerum? Autem delectus distinctio eveniet hic iure nesciunt quidem repudiandae ullam ut voluptas.</div>
+    </div>
+
+    <h3>Сайт с 2 колонками</h3>
+    <div class="row clearfix">
+        <div class="side-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur et facere, fugit sint sunt temporibus voluptates. Culpa explicabo facere hic incidunt iste laudantium libero necessitatibus pariatur, placeat, quas, tempora?</div>
+        <div class="side-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur et facere, fugit sint sunt temporibus voluptates. Culpa explicabo facere hic incidunt iste laudantium libero necessitatibus pariatur, placeat, quas, tempora?</div>
+        <div class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet ipsam mollitia omnis quibusdam quod repudiandae rerum? Autem delectus distinctio eveniet hic iure nesciunt quidem repudiandae ullam ut voluptas.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import "normalize";
+@import "variables";
+
+body {
+  font-family: $base-font;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  margin: 40px auto;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.translateRight {
+  transform: translate(-100%, 0px);
+}
+
+.translateLeft {
+  transform: translate(50%, 0px);
+}
+
+.scale {
+  transform: scale(1);
+  transition: all 1s;
+  &:hover {
+    transform: scale(.5);
+  }
+}
+
+.skew {
+  transform: skew(40deg, 0deg) rotate(50deg);
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: Helvetica;
+}
+
+.row {
+    width: 200px;
+    background: yellow;
+}
+
+.box {
+    width: 50%;
+    height: 100px;
+    background: green;
+}
+
+.text-box {
+    background: black;
+    color: rgb(114, 191, 54);
+}
+
+.text-box-updated {
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+.text-box-italic {
+    font-style: italic;
+}
+
+.text-box-bold {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.text-box-with-line-height {
+    width: 50%;
+    line-height: 1.4;
+    text-transform: none;
+}
+
+.text-box-right {
+    text-align: right;
+}
+
+.text-box-center {
+    text-align: center;
+}
+
+.text-box-decorated {
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.text-box-shadow {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 10px red;
+}
+
+.box-with-bg{
+    width: 100px;
+    height: 100px;
+    background: #000;
+}
+
+.box-with-border{
+    border: 15px solid red;
+}
+
+.box-with-border-radius{
+    border-radius: 100px;
+}
+
+.box-shadowed{
+    width: 400px;
+    height: 400px;
+    background: orange;
+    box-shadow: -5px -5px 10px green;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 0 40px;
+    visibility: visible;
+    overflow: visible;
+}
+
+ul{
+    list-style: decimal;
+}

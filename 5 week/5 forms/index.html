@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.10 Forms</title>
+</head>
+<body>
+<form action="http://google.com">
+    <p>
+        <input type="text" value="cats" placeholder="Введите слово">
+    </p>
+    <p>
+        <input type="file">
+    </p>
+    <div>
+        <h5>Я знаю:</h5>
+        <p>
+            <input type="checkbox" id="check_html" checked disabled>
+            <label for="check_html">
+                HTML
+            </label>
+        </p>
+        <p>
+            <input type="checkbox" id="check_css" checked>
+            <label for="check_css">
+                CSS
+            </label>
+        </p>
+        <p>
+            <input type="checkbox" id="check_js">
+            <label for="check_js">
+                JS
+            </label>
+        </p>
+    </div>
+
+
+    <div>
+        <h5>Я знаю:</h5>
+        <p>
+            <input type="radio" id="check_5html_radio" name="check_tech" checked>
+            <label for="check_html_radio">
+                HTML
+            </label>
+        </p>
+        <p>
+            <input type="radio" id="check_css_radio" name="check_tech" disabled>
+            <label for="check_css_radio">
+                CSS
+            </label>
+        </p>
+        <p>
+            <input type="radio" id="check_js_radio" name="check_tech" disabled>
+            <label for="check_js_radio">
+                JS
+            </label>
+        </p>
+    </div>
+
+    <select name="techs" id="techs">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js">js</option>
+    </select>
+
+    <p>
+        <input type="submit" value="Найти слово">
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import "normalize";
+@import "variables";
+@import "animate";
+
+body {
+  font-family: $base-font;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: rebeccapurple;
+  transition: all 0.3s;
+  &:hover {
+    @extend .rubberBand;
+  }
+}
+
+.box-animated{
+  animation: moveBox 5s infinite 0s ease-out;
+  //animation-name: moveBox;
+  //animation-duration: 5s;
+  //animation-iteration-count: infinite;
+  //animation-delay: 3s;
+  //animation-timing-function: ease-out;
+  &:hover {
+    background: greenyellow;
+    transform: translate(40px, 0);
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin: 30px;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 1px solid rebeccapurple;
+  color: rebeccapurple;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: rebeccapurple;
+    color: #fff;
+  }
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(600px, 0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

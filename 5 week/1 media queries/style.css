@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica;
+    padding: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: yellow;
+}
+
+@media (max-width: 1024px) {
+    body{
+        background: red;
+    }
+}
+
+.column{
+    border: 1px solid #000;
+    height: 200px;
+    width: 25%;
+    float: left;
+}
+
+@media (max-width: 900px) {
+    .column{
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    .column{
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px) {
+    .column{
+        width: 100%;
+    }
+}

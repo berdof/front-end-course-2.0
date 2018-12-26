@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica;
+    padding: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container div{
+    text-align: center;
+    color: #fff;
+}
+
+.box1{
+    background: #1abc9c;
+    padding: 40px 50px;
+    order: 3;
+}
+.box2{
+    background: orangered;
+    padding: 100px 80px;
+    order: 3;
+}
+.box3{
+    background: yellowgreen;
+    padding: 300px 200px;
+    order: 2;
+}
+
+.row{
+    display: flex;
+}
+
+.slide-left{
+    width: 100px;
+    background: yellowgreen;
+}
+
+.slide-right{
+    width: 400px;
+    background: yellow;
+}
+
+.center{
+    background: orangered;
+    flex: 1;
+}
