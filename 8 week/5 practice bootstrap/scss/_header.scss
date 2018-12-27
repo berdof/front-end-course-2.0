@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 114px;
+  padding: 35px 0 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li {
+    padding: 0 0 0 20px;
+  }
+  a {
+    color: #fafcfe;
+    font-size: 18px;
+  }
+}

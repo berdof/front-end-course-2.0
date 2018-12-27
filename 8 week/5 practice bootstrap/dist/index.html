@@ -2,21 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="./js/all.js"></script>
 </head>
 <body>
-<header>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a class="col-lg-2" href="#">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <nav class="menu col-lg-6 ml-auto">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Offices</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
-<div class="content">
-    <h3>CSS3 transitions</h3>
-    <div class="box box-animated">text</div>
-    <br>
-    <div class="box animated">text</div>
-    <br>
-    <div id="box-to-animate" class="box animated">text</div>
-    <a class="btn" href="/">btn</a>
+
+<div class="hero">
+    <div class="container h-100">
+        <div class="row h-100 d-flex align-content-center justify-content-center">
+            <div class="col-lg-8 hero-in">
+                <img class="hero-logo" src="./images/logo-big.png" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                <a class="btn" href="#">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-down">
+        <img class="hero-scroll-down-icon" src="./images/icon-mouse.png" alt="">
+        SCROLL DOWN
+    </div>
 </div>
+
 <footer>
 </footer>
 </body>

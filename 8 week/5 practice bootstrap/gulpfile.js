@@ -71,20 +71,28 @@ function templateTask() {
         .pipe(browserSync.stream());
 }
 
+function images() {
+    gulp.src("./images/**.*")
+        .pipe(gulp.dest('./dist/images'));
+}
+
 function watchTask() {
     gulp.watch([inc_file, template_file], ['template']);
     gulp.watch([scss_path], ['scss']);
     gulp.watch(['js/*.js', 'js/libs/*.js'], ['js']);
+    gulp.watch(['images/**.*'], ['images']);
 }
 
 (function start(){
     scssTask();
     jsTask();
     templateTask();
+    images();
 })();
 
 gulp.task('scss', scssTask);
 gulp.task('js', jsTask);
 gulp.task('template', templateTask);
+gulp.task('images', images);
 gulp.task('watch', watchTask);
 gulp.task('build', ['template', 'scss', 'js']);

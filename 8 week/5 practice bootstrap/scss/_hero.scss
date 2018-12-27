@@ -1,0 +1,53 @@
+
+.section-arrow {
+  padding-bottom: 10vw !important;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
+}
+
+.hero {
+  @extend .section-arrow;
+  background: url('../images/hero.png') no-repeat;
+  padding: 114px 0 0;
+  height: 100vh;
+}
+
+.hero-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-logo {
+  margin-bottom: 35px;
+}
+
+.hero-scroll-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 54px;
+  color: #ffffff;
+}
+
+.hero-scroll-down-icon {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.btn {
+  height: 40px;
+  line-height: 36px;
+  border: 2px solid #fafcfe;
+  border-radius: 3px;
+  color: #fafcfe;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 40px;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}

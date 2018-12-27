@@ -3,15 +3,25 @@
 @@include('./include/head.html')
 <body>
 @@include('./include/header.html')
-<div class="content">
-    <h3>CSS3 transitions</h3>
-    <div class="box box-animated">text</div>
-    <br>
-    <div class="box animated">text</div>
-    <br>
-    <div id="box-to-animate" class="box animated">text</div>
-    <a class="btn" href="/">btn</a>
+
+<div class="hero">
+    <div class="container h-100">
+        <div class="row h-100 d-flex align-content-center justify-content-center">
+            <div class="col-lg-8 hero-in">
+                <img class="hero-logo" src="./images/logo-big.png" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                <a class="btn" href="#">Know More</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-down">
+        <img class="hero-scroll-down-icon" src="./images/icon-mouse.png" alt="">
+        SCROLL DOWN
+    </div>
 </div>
+
 @@include('./include/footer.html')
 </body>
 </html>
