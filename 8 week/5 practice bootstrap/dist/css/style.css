@@ -11795,6 +11795,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-family: Raleway;
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -11831,16 +11835,26 @@ a.text-dark:focus {
 }
 
 .section-arrow,
-.hero {
+.hero,
+.services {
   padding-bottom: 10vw !important;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
+  position: relative;
+}
+
+.section-arrow-next,
+.services {
+  padding-bottom: 20px;
+  margin-top: -10vw;
+  padding-top: calc(10vw + 65px);
 }
 
 .hero {
   background: url("../images/hero.png") no-repeat;
   padding: 114px 0 0;
   height: 100vh;
+  z-index: 10;
 }
 
 .hero-in {
@@ -11895,6 +11909,47 @@ a.text-dark:focus {
   color: #000;
 }
 
-body {
-  font-family: Raleway;
+.title {
+  color: #2980b9;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 67px;
+}
+
+.title:after {
+  background: #2980b9;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 10px auto 0 auto;
+}
+
+.services {
+  z-index: 9;
+}
+
+.services-list {
+  color: #616161;
+}
+
+.services-list-item {
+  text-align: center;
+}
+
+.services-list-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-list-item p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.services-list-icon {
+  margin-bottom: 14px;
 }

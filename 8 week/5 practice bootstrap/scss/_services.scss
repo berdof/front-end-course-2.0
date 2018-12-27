@@ -1,0 +1,45 @@
+.title {
+  color: #2980b9;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 67px;
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #2980b9;
+    margin: 10px auto 0 auto;
+  }
+}
+
+.services {
+  @extend .section-arrow;
+  @extend .section-arrow-next;
+  z-index: 9;
+}
+
+.services-list {
+  color: #616161;
+}
+
+.services-list-item {
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+
+.services-list-icon{
+  margin-bottom: 14px;
+}

@@ -2,6 +2,13 @@
 .section-arrow {
   padding-bottom: 10vw !important;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
+  position: relative;
+}
+
+.section-arrow-next {
+  padding-bottom: 20px;
+  margin-top: -10vw;
+  padding-top: calc(10vw + 65px);
 }
 
 .hero {
@@ -9,6 +16,7 @@
   background: url('../images/hero.png') no-repeat;
   padding: 114px 0 0;
   height: 100vh;
+  z-index: 10;
 }
 
 .hero-in {
