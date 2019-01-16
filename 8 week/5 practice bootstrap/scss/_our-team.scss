@@ -1,0 +1,37 @@
+.team {
+  @extend .section-arrow;
+  @extend .section-arrow-next;
+  z-index: 7;
+  text-align: center;
+}
+
+.team-about{
+  padding-bottom: 65px;
+}
+
+.team-list {
+
+}
+
+.team-list-item {
+  padding-bottom: 30px;
+}
+
+.team-list-img{
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+}
+
+.team-list-name {
+  color: #2980b9;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 0 0;
+}
+
+.team-list-position {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 500;
+}

@@ -1,0 +1,35 @@
+.contact-us {
+  @extend .section-arrow-next;
+  @extend .section-with-overlay;
+  position: relative;
+  z-index: 4;
+  background: url('../images/contact-us-bg.png') no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 179px;
+}
+
+.contact-us-list {
+
+}
+
+.contact-us-list-item {
+  color: #fafcfe;
+  padding-bottom: 30px;
+  img{
+    margin-bottom: 17px;
+  }
+}
+
+.contact-us-list-name {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-us-list-value {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}

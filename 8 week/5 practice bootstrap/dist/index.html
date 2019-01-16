@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     <script src="./js/all.js"></script>
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="row">
-            <a class="col-lg-2" href="#">
+            <a class="logo col-lg-2 col-md-2" href="#">
                 <img src="./images/logo.png" alt="">
             </a>
-            <nav class="menu col-lg-6 ml-auto">
+            <nav class="menu col-lg-10 col-md-10 ml-auto">
                 <ul class="d-flex justify-content-end">
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -31,7 +33,7 @@
     </div>
 </header>
 
-<div class="hero">
+<div data-jarallax class="hero">
     <div class="container h-100">
         <div class="row h-100 d-flex align-content-center justify-content-center">
             <div class="col-lg-8 hero-in">
@@ -49,30 +51,224 @@
     </div>
 </div>
 
-<div class="services">
-    <h2 class="title">our services</h2>
+<div data-jarallax class="services">
     <div class="container">
+        <h2 class="title">our services</h2>
         <div class="row justify-content-lg-around services-list">
             <div class="services-list-item col-lg-2">
                 <img class="services-list-icon" src="./images/idea-icon.png" alt="">
                 <h3>Idea</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
             </div>
             <div class="services-list-item col-lg-2">
                 <img class="services-list-icon" src="./images/design-icon.png" alt="">
                 <h3>Design</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
             </div>
             <div class="services-list-item col-lg-2">
                 <img class="services-list-icon" src="./images/code-icon.png" alt="">
                 <h3>Code</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
             </div>
         </div>
     </div>
 </div>
 
-<footer>
+<div data-jarallax class="portfolio">
+    <div class="container">
+        <h2 class="title title-white">our portfolio</h2>
+        <div class="row portfolio-list">
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+            <div class="portfolio-list-item col-lg-4">
+                <div class="portfolio-list-item-overlay">
+                    <span>iPhone App UI Design</span>
+                    <div class="portfolio-list-plus-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-jarallax class="team">
+    <div class="container">
+        <div class="team-about row justify-content-center">
+            <div class="col-lg-4">
+                <h2 class="title">our team</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <div class="row team-list">
+            <div class="col-lg-3 col-md-6 col-sm-12 team-list-item">
+                <img class="team-list-img" src="./images/team-photo.png" alt="">
+                <div class="team-list-name">Farouk Hosni</div>
+                <div class="team-list-position">Developer</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 team-list-item">
+                <img class="team-list-img" src="./images/team-photo.png" alt="">
+                <div class="team-list-name">Farouk Hosni</div>
+                <div class="team-list-position">Developer</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 team-list-item">
+                <img class="team-list-img" src="./images/team-photo.png" alt="">
+                <div class="team-list-name">Farouk Hosni</div>
+                <div class="team-list-position">Developer</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 team-list-item">
+                <img class="team-list-img" src="./images/team-photo.png" alt="">
+                <div class="team-list-name">Farouk Hosni</div>
+                <div class="team-list-position">Developer</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-jarallax class="offices">
+    <div class="container">
+        <div class="team-about row justify-content-center">
+            <div class="col-lg-4">
+                <h2 class="title title-white">our offices</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <img class="offices-map col-lg-8 col-md-12" src="./images/offices-map.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div data-jarallax class="clients">
+    <div class="container">
+        <div class="team-about row justify-content-center">
+            <div class="col-lg-4">
+                <h2 class="title">our clients</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+
+        <div class="clients-img-list">
+            <img class="clients-img-list-item" src="./images/logo-google.png" alt="">
+            <img class="clients-img-list-item" src="./images/logo-booking.png" alt="">
+            <img class="clients-img-list-item" src="./images/logo-dropbox.png" alt="">
+            <img class="clients-img-list-item" src="./images/logo-facebook.png" alt="">
+            <img class="clients-img-list-item" src="./images/logo-groupon.png" alt="">
+            <img class="clients-img-list-item" src="./images/logo-paypal.png" alt="">
+        </div>
+
+        <div class="clients-list col-lg-8">
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+            <div class="clients-list-item">
+                <p class="clients-list-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+
+                <p class="clients-list-author"><span>Mark Zuckerberg</span>, Facebook.com</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div data-jarallax class="contact-us">
+    <div class="container">
+        <div class="team-about row justify-content-center">
+            <div class="col-lg-4">
+                <h2 class="title title-white">contact us</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+
+        <div class="row contact-us-list">
+            <div class="col-lg-3 col-md-6 contact-us-list-item">
+                <img src="./images/contact-phone.png" alt="">
+                <span class="contact-us-list-name">Customer Care</span>
+                <span class="contact-us-list-value">(+00) 123456789</span>
+            </div>
+            <div class="col-lg-3 col-md-6 contact-us-list-item">
+                <img src="./images/contact-email.png" alt="">
+                <span class="contact-us-list-name">E-Mail</span>
+                <span class="contact-us-list-value">Hello@Arrowagency.com</span>
+            </div>
+            <div class="col-lg-3 col-md-6 contact-us-list-item">
+                <img src="./images/contact-phone.png" alt="">
+                <span class="contact-us-list-name">Twitter</span>
+                <span class="contact-us-list-value">@ArrowAgency</span>
+            </div>
+            <div class="col-lg-3 col-md-6 contact-us-list-item">
+                <img src="./images/contact-phone.png" alt="">
+                <span class="contact-us-list-name">Faebook</span>
+                <span class="contact-us-list-value">ArrowAgency</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    All Rights Reserved 2015 - Arrow Agency
 </footer>
 </body>
 </html>

@@ -1,0 +1,20 @@
+.offices {
+  @extend .section-arrow;
+  @extend .section-arrow-next;
+  @extend .section-with-overlay;
+  z-index: 6;
+  background: url("../images/offices-bg.png") no-repeat;
+  background-size: cover;
+  color: #fafcfe;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .offices-map {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: auto;
+    height: auto;
+  }
+}

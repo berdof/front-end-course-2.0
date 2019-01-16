@@ -1,11 +1,18 @@
 @import "normalize";
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "slick-slider";
+@import "slick-slider-theme";
 
-body {
-  font-family: $base-font;
-}
+
+@import "base";
 
 @import "header";
 @import "hero";
 @import "services";
+@import "portfolio";
+@import "our-team";
+@import 'our-offices';
+@import 'clients';
+@import 'contact-us';
+@import 'footer';

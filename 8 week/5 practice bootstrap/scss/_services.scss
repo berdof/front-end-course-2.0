@@ -1,20 +1,3 @@
-.title {
-  color: #2980b9;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 67px;
-  &:after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #2980b9;
-    margin: 10px auto 0 auto;
-  }
-}
-
 .services {
   @extend .section-arrow;
   @extend .section-arrow-next;
@@ -42,4 +25,10 @@
 
 .services-list-icon{
   margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .services-list-item{
+    padding-bottom: 50px;
+  }
 }
