@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.4 home work</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Helvetica;
+        }
+
+        .header {
+            padding: 20px;
+            border: 1px solid grey;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .content {
+            background: black;
+        }
+
+        .col {
+            padding: 20px;
+        }
+
+        .col-left {
+            width: 100px;
+            background: yellow;
+            float: left;
+            margin: -17px 0 0;
+        }
+
+        .col-right {
+            width: 100px;
+            background: orange;
+            float: right;
+        }
+
+        .col-center {
+            background: green;
+            overflow: hidden;
+        }
+
+        .footer {
+            border: 1px solid red;
+            padding: 20px;
+        }
+
+        .box {
+            background: red;
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    header
+</div>
+<div class="content clearfix">
+    <div class="col col-left">
+        col left
+        <div class="box">X</div>
+    </div>
+    <div class="col col-right">
+        col right
+    </div>
+    <div class="col col-center">
+        col center
+    </div>
+</div>
+<div class="footer">
+    footer
+</div>
+</body>
+</html>
