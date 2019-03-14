@@ -1,0 +1,85 @@
+body {
+    font-family: Helvetica;
+    color: #ffffff;
+}
+
+.wrap {
+    background: orangered;
+}
+
+.col {
+    width: 300px;
+    background: #0c5460;
+    height: 500px;
+}
+
+.col-left {
+    float: left;
+}
+
+.col-right {
+    float: right;
+}
+
+.center {
+    background: #fff;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.quote {
+    color: #353854;
+    font-size: 24px;
+    line-height: 36px;
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.quote-info {
+    clear: both;
+}
+
+.quote-text {
+
+}
+
+.quote-author {
+    color: #353854;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.quote-arr-up {
+    float: left;
+}
+
+.quote-arr-down {
+    float: right;
+}
+
+.quote-ease {
+    overflow: hidden;
+}
+
+.quote-ease:before{
+    content: '';
+    background-image: url("./images/arr-up.png");
+    width: 47px;
+    height: 35px;
+    display: block;
+    float: left;
+}
+
+.quote-ease:after{
+    content: '';
+    background-image: url("./images/arr-down.png");
+    width: 47px;
+    height: 35px;
+    display: block;
+    float: right;
+}

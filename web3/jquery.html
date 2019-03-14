@@ -1,0 +1,118 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+
+        .wrap {
+            justify-content: flex-start;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: red;
+            height: 100%;
+        }
+
+        .sidebar-hidden {
+            display: none;
+        }
+
+        .btn {
+            background: cornflowerblue;
+            color: #fff;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 60px;
+            display: inline-block;
+            border: none;
+            font-size: 16px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: dodgerblue;
+        }
+
+        .btn.active {
+            background: dodgerblue;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      function sum(a, b) {
+        return a + b;
+      }
+
+      function divide(a, b) {
+        if (b === 0) {
+          return 'Exception. Can"t divide by zero';
+        }
+        return a / b;
+      }
+
+      //sum(1, 4);
+      divide(1, 0);
+
+      $(document).ready(function () {
+
+        $('.btn').click(function () {
+          var val1 = $('#val1').val();
+          var val2 = $('#val2').val();
+
+          //alert(divide(val1, val2))
+
+          $('#pass').attr('type', 'text');
+
+        });
+
+
+        $('#hideSidebar').click(function () {
+          var sidebar = $('.sidebar');
+
+          if (sidebar.is(':visible')) {
+            sidebar.fadeOut();
+
+            /// $(this) === $('#hideSidebar')
+
+            $(this).addClass('active');
+            $(this).html('show sidebar');
+          } else {
+            sidebar.fadeIn();
+            $(this).removeClass('active');
+            $(this).html('hide sidebar');
+          }
+        })
+
+      })
+
+
+    </script>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar sidebar-hidden"></div>
+    <div class="content">
+        <input type="text" value="100" id="val1">
+        <input type="text" value="20" id="val2">
+        <input type="password" value="20" id="pass">
+        <button class="btn">click me</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <button class="btn" id="hideSidebar">hide sidebar</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

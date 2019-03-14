@@ -1,0 +1,31 @@
+body {
+    font-family: ProximaNova;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.box{
+    background: red;
+    width: 600px;
+    height: 100px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .box{
+        background: green;
+        width: 100%;
+    }
+}
