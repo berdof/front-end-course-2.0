@@ -1,0 +1,71 @@
+@import "normalize";
+@import "variables";
+
+
+body {
+  background: rebeccapurple;
+  margin: calc(100px + 20%);
+  font-family: $base-font;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.list{
+
+}
+
+.content {
+  width: $width;
+  background: #fff;
+}
+
+.button {
+  display: inline-flex;
+  height: $button-height;
+  background: black;
+  color: $button-color;
+  border-radius: $button-radius;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.button-medium {
+  @extend .button;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+div {
+  color: orange;
+}
+
+.menu {
+  @extend .clearfix;
+  list-style: none;
+  li {
+    float: left;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &.active {
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

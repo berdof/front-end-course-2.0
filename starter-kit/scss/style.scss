@@ -1,0 +1,142 @@
+@import "normalize";
+@import "variables";
+
+body {
+  background: rebeccapurple;
+  margin: calc(100px + 20%);
+  font-family: $base-font;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.list {
+
+}
+
+.content {
+  width: $width;
+  background: #fff;
+}
+
+.button {
+  display: inline-flex;
+  height: $button-height;
+  background: black;
+  color: $button-color;
+  border-radius: $button-radius;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.button-medium {
+  @extend .button;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+div {
+  color: orange;
+}
+
+/**before**/
+.menu {
+  display: block;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+/**!before**/
+
+/**after**/
+.menu-scss {
+  display: block;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    &:hover, &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+/**!after**/
+
+.menu {
+  @extend .clearfix;
+  list-style: none;
+  li {
+    float: left;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &.active {
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+$color-black: #c7989b;
+
+.btn {
+  border: 1px solid $color-black;
+  display: inline-flex;
+  height: 40px;
+  padding: 0 30px;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: $color-black;
+  border-radius: 3px;
+  transition: all .3s;
+  &:hover{
+    background: #fff;
+    color: $color-black;
+  }
+}
+
+.btn-transparent{
+  @extend .btn;
+  background: #fff;
+  color: #000000;
+  &:hover{
+    background: #000;
+    color: #fff;
+  }
+}
+
+.btn-primary{
+  @extend .btn;
+  background: cornflowerblue;
+  border: 1px solid #4a78ed;
+  color: #fff;
+  &:hover{
+    background: #4a78ed;
+    color: #fff;
+  }
+}
